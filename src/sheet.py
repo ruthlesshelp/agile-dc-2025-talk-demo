@@ -6,9 +6,9 @@ class Sheet:
         """Get the calculated value of a cell."""
         return ""
 
-    def put(self, cell_ref: str, value: str) -> None:
+    def set(self, cell_ref: str, value: str) -> None:
         """Set the value of a cell."""
-        raise NotImplementedError("Sheet.put() not implemented")
+        raise NotImplementedError("Sheet.set() not implemented")
 
     def get_literal(self, cell_ref: str) -> str:
         """Get the raw/literal value of a cell for editing."""
