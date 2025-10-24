@@ -95,13 +95,13 @@ from sheet import Sheet
 
 # Create spreadsheet and add data
 sheet = Sheet()
-sheet.put("A1", "10")
-sheet.put("A2", "=A1 * 2 + 5")
+sheet.set("A1", "10")
+sheet.set("A2", "=A1 * 2 + 5")
 
 print(sheet.get("A2"))  # Output: "25"
 
 # Change dependency - auto-recalculates
-sheet.put("A1", "20") 
+sheet.set("A1", "20")
 print(sheet.get("A2"))  # Output: "45"
 ```
 
